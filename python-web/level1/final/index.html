@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>10MINs</title>
+        <link rel="stylesheet" href="css/semantic.css" media="screen" title="no title">
+        <style media="screen">
+            .my-username {
+                font-weight: bold;
+            }
+
+            .ui.container.my-content {
+                width: 780px;
+                padding-top: 80px;
+                padding-bottom: 30px;
+                text-align: center;
+                text-align: -moz-center;
+                text-align: -webkit-center;
+            }
+
+            .ui.menu.my-switcher {
+                width: 50%;
+                border: 2px solid rgba(0, 0, 0, 0.10);
+                box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15);
+            }
+
+            .ui.menu.my-switcher > .item {
+                background: rgba(0, 0, 0, 0.10);
+                border-radius: 0;
+                color: rgba(0, 0, 0, 0.30);
+                font-weight: bold;
+            }
+
+            .ui.menu.my-switcher > .item:hover {
+                background: #FFF;
+                color: #000;
+            }
+
+            .ui.menu.my-switcher > .active.item {
+                background: #FFF;
+                color: #000;
+            }
+
+            .ui.grid.my-album {
+                margin-top: 10px;
+                margin-bottom: 40px;
+            }
+
+            .ui.card > .image {
+                width: 100%;
+                height: 190px;
+                object-fit: cover;
+            }
+
+            .ui.segment.my-figcaption {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .ui.segment.my-figcaption .ui.header.my-imgheader {
+                margin-bottom: 0;
+            }
+
+            .my-grey {
+                color: rgba(0, 0, 0, 0.4);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 顶部导航栏 -->
+        <nav class="ui top fixed inverted red borderless menu">
+            <!-- 左边的 10MINs logo -->
+            <a class="header item">
+                <img src="images/tenlogo.png" alt="Logo" class="ui image" />
+            </a>
+
+            <!-- 右边的 admin 和 logout -->
+            <div class="right menu">
+                <div class="item">
+                    <div class="ui dropdown">
+                        <img src="images/hou30.jpg" alt="Avatar" class="ui avatar image" />
+                        <span class="my-username">admin</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="ui inverted circular button">Logout</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 网页主体部分 -->
+        <div class="ui secondary vertical segment">
+            <div class="ui container my-content">
+                <!-- switcher -->
+                <nav class="ui three item borderless menu my-switcher">
+                    <a class="item">All</a>
+                    <a class="item">New</a>
+                    <a class="active item">Editor&rsquo;s</a>
+                </nav>
+
+                <!-- 9 张图片 -->
+                <div class="ui three column grid my-album">
+                    <!-- 第 1 张 -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <img src="images/img1.jpg" alt="img1" title="Ut unde numquam non nisi." class="image" />
+                        </div>
+                        <div class="ui left aligned vertical segment my-figcaption">
+                            <h3 class="ui header my-imgheader">Ut unde numquam non nisi.</h3>
+                            <i class="my-grey unhide icon"></i>
+                            <span class="my-grey">10K&nbsp;|</span>
+                            <i class="my-grey checkmark icon"></i>
+                            <span class="my-grey">10 people got it</span>
+                        </div>
+                    </div>
+                    <!-- 第 2 张 -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <img src="images/img2.jpg" alt="img2" title="Nesciunt eligendi qui et si..." class="image" />
+                        </div>
+                        <div class="ui left aligned vertical segment my-figcaption">
+                            <h3 class="ui header my-imgheader">Nesciunt eligendi qui et si...</h3>
+                            <i class="my-grey unhide icon"></i>
+                            <span class="my-grey">10K&nbsp;|</span>
+                            <i class="my-grey checkmark icon"></i>
+                            <span class="my-grey">10 people got it</span>
+                        </div>
+                    </div>
+                    <!-- 第 3 张 -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <img src="images/img3.jpg" alt="img3" title="Quo accusantium commodi in ..." class="image" />
+                        </div>
+                        <div class="ui left aligned vertical segment my-figcaption">
+                            <h3 class="ui header my-imgheader">Quo accusantium commodi in ...</h3>
+                            <i class="my-grey unhide icon"></i>
+                            <span class="my-grey">10K&nbsp;|</span>
+                            <i class="my-grey checkmark icon"></i>
+                            <span class="my-grey">10 people got it</span>
+                        </div>
+                    </div>
+                    <!-- 第 4 张 -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <img src="images/img4.jpg" alt="img4" title="Deleniti laudantium cum occ..." class="image" />
+                        </div>
+                        <div class="ui left aligned vertical segment my-figcaption">
+                            <h3 class="ui header my-imgheader">Deleniti laudantium cum occ...</h3>
+                            <i class="my-grey unhide icon"></i>
+                            <span class="my-grey">10K&nbsp;|</span>
+                            <i class="my-grey checkmark icon"></i>
+                            <span class="my-grey">10 people got it</span>
+                        </div>
+                    </div>
+                    <!-- 第 5 张 -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <img src="images/img5.jpg" alt="img5" title="Aliquid impedit et iure fug..." class="image" />
+                        </div>
+                        <div class="ui left aligned vertical segment my-figcaption">
+                            <h3 class="ui header my-imgheader">Aliquid impedit et iure fug...</h3>
+                            <i class="my-grey unhide icon"></i>
+                            <span class="my-grey">10K&nbsp;|</span>
+                            <i class="my-grey checkmark icon"></i>
+                            <span class="my-grey">10 people got it</span>
+                        </div>
+                    </div>
+                    <!-- 第 6 张 -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <img src="images/img6.jpg" alt="img6" title="Corporis qui odio perferend..." class="image" />
+                        </div>
+                        <div class="ui left aligned vertical segment my-figcaption">
+                            <h3 class="ui header my-imgheader">Corporis qui odio perferend...</h3>
+                            <i class="my-grey unhide icon"></i>
+                            <span class="my-grey">10K&nbsp;|</span>
+                            <i class="my-grey checkmark icon"></i>
+                            <span class="my-grey">10 people got it</span>
+                        </div>
+                    </div>
+                    <!-- 第 7 张 -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <img src="images/img7.jpg" alt="img7" title="Molestiae cupiditate et ut ..." class="image" />
+                        </div>
+                        <div class="ui left aligned vertical segment my-figcaption">
+                            <h3 class="ui header my-imgheader">Molestiae cupiditate et ut ...</h3>
+                            <i class="my-grey unhide icon"></i>
+                            <span class="my-grey">10K&nbsp;|</span>
+                            <i class="my-grey checkmark icon"></i>
+                            <span class="my-grey">10 people got it</span>
+                        </div>
+                    </div>
+                    <!-- 第 8 张 -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <img src="images/img8.jpg" alt="img8" title="Rem accusamus dicta repudia..." class="image" />
+                        </div>
+                        <div class="ui left aligned vertical segment my-figcaption">
+                            <h3 class="ui header my-imgheader">Rem accusamus dicta repudia...</h3>
+                            <i class="my-grey unhide icon"></i>
+                            <span class="my-grey">10K&nbsp;|</span>
+                            <i class="my-grey checkmark icon"></i>
+                            <span class="my-grey">10 people got it</span>
+                        </div>
+                    </div>
+                    <!-- 第 9 张 -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <img src="images/img9.jpg" alt="img9" title="Ad et voluptabus qui. Nih..." class="image" />
+                        </div>
+                        <div class="ui left aligned vertical segment my-figcaption">
+                            <h3 class="ui header my-imgheader">Ad et voluptabus qui. Nih...</h3>
+                            <i class="my-grey unhide icon"></i>
+                            <span class="my-grey">10K&nbsp;|</span>
+                            <i class="my-grey checkmark icon"></i>
+                            <span class="my-grey">10 people got it</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- album 下方的左右按钮 -->
+                <nav class="ui compact icon menu">
+                    <a class="item">
+                        <i class="red left arrow icon"></i>
+                    </a>
+                    <a class="item">
+                        <i class="red right arrow icon"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </body>
+</html>
