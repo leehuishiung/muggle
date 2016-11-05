@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>First Web</title>
-        <link rel="stylesheet" href="css/semantic.css" media="screen" title="no title">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
         <style media="screen">
-            .ui.segment.myheader {
+            .ui.segment.my-header {
                 padding-top: 0;
                 padding-bottom: 0;
             }
@@ -19,16 +19,17 @@
                 left: calc(100% + 1rem);
             }
 
-            .ui.header {
+            .ui.segment.my-content .ui.header {
                 margin-top: 0;
             }
         </style>
     </head>
     <body>
-        <header class="ui inverted vertical segment myheader">
+        <header class="ui inverted vertical segment my-header">
             <img src="images/banner.jpg" alt="" class="ui fluid image" />
         </header>
-        <div class="ui vertical segment">
+
+        <div class="ui vertical segment my-content">
             <div class="ui container segment">
                 <div class="ui blue right ribbon label">
                     life
@@ -60,6 +61,7 @@
                 <button type="button" name="" class="ui inverted blue button">Read more</button>
             </div>
         </div>
+
         <footer class="ui inverted very padded vertical segment">
             <p>Mugglecoding&reg;</p>
         </footer>
